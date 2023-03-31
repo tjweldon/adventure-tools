@@ -1,7 +1,7 @@
 ## Usage
 
 A tool for handling PNG based sprite sheets.
-Built specifically to manage assets for (Wombatlord)[https://github.com/Wombatlord]/(adventure-league)[https://github.com/adventure-league]. 
+Built specifically to manage assets for [Wombatlord](https://github.com/Wombatlord)/[adventure-league](https://github.com/adventure-league). 
 Go take a look, it's pretty neat.
 
 ### Top Level Command
