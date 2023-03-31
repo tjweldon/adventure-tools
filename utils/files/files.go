@@ -29,7 +29,30 @@ func LoadPng(path string) (img image.Image, err error) {
 	return png.Decode(buf)
 }
 
+func Output(img image.Image) error {
+	var buf bytes.Buffer
+
+	if err := png.Encode(&buf, img); err != nil {
+		return err
+	}
+
+	writer := bufio.NewWriter(os.Stdout)
+	if _, err := writer.Write(buf.Bytes()); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func Save(path string, img image.Image) (err error) {
+	if path == "" {
+		return Output(img)
+	} else {
+		return SaveToDisk(path, img)
+	}
+}
+
+func SaveToDisk(path string, img image.Image) (err error) {
 	var buf bytes.Buffer
 
 	err = png.Encode(&buf, img)

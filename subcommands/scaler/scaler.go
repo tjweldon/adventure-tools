@@ -12,7 +12,7 @@ import (
 
 type Command struct {
 	Source string `arg:"-s" help:"The input file path"`
-	Destination string `arg:"-d" help:"The output file path"`
+	Destination string `arg:"-d" help:"The output file path. To write to stdout, do not provide this option"`
 	X uint `arg:"-x" default:"1" help:"Set the x scaling factor."`
 	Y uint `arg:"-y" default:"1" help:"Set the x scaling factor."`
 }
@@ -20,9 +20,6 @@ type Command struct {
 func (c *Command) Validate() error {
 	if c.Source == "" {
 		return fmt.Errorf("No source provided")
-	}
-	if c.Destination == "" {
-		return fmt.Errorf("No destination provided")
 	}
 	if c.X == 0 {
 		return fmt.Errorf("Cannot scale x by a zero value")
