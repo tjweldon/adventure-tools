@@ -2,7 +2,7 @@ package main
 
 import (
 	"log"
-	"sprite_tools/subcommands/scaler"
+	"adventure-tools/subcommands/scaler"
 
 	"github.com/alexflint/go-arg"
 )

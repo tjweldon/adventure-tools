@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"image"
 	"image/color"
-	"sprite_tools/utils/files"
+	"adventure-tools/utils/files"
 
 	_ "github.com/alexflint/go-arg"
 )
