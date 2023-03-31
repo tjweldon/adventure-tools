@@ -7,7 +7,7 @@ Go take a look, it's pretty neat.
 ### Top Level Command
 
 ```
-Usage: main <command> [<args>]
+Usage: adventure-tools <command> [<args>]
 
 Options:
   --help, -h             display this help and exit
@@ -19,7 +19,7 @@ Commands:
 ### Scale Command
 
 ```
-Usage: main scale [--source SOURCE] [--destination DESTINATION] [--x X] [--y Y]
+Usage: adventure-tools scale [--source SOURCE] [--destination DESTINATION] [--x X] [--y Y]
 
 Options:
   --source SOURCE, -s SOURCE
