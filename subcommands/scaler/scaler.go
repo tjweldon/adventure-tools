@@ -13,7 +13,7 @@ type Command struct {
 	Source      string `arg:"-s" help:"The input file path"`
 	Destination string `arg:"-d" help:"The output file path. To write to stdout, do not provide this option"`
 	X           uint   `arg:"-x" default:"1" help:"Set the x scaling factor."`
-	Y           uint   `arg:"-y" default:"1" help:"Set the x scaling factor."`
+	Y           uint   `arg:"-y" default:"1" help:"Set the y scaling factor."`
 }
 
 func (c *Command) Validate() error {

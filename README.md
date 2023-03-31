@@ -27,6 +27,6 @@ Options:
   --destination DESTINATION, -d DESTINATION
                          The output file path. To write to stdout, do not provide this option
   --x X, -x X            Set the x scaling factor. [default: 1]
-  --y Y, -y Y            Set the x scaling factor. [default: 1]
+  --y Y, -y Y            Set the y scaling factor. [default: 1]
   --help, -h             display this help and exit
 ```
