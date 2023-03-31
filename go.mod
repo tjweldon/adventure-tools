@@ -1,4 +1,4 @@
-module sprite_tools
+module adventure-tools
 
 go 1.19
 
