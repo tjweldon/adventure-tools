@@ -1,10 +1,10 @@
 package scaler
 
 import (
+	"adventure-tools/utils/files"
 	"fmt"
 	"image"
 	"image/color"
-	"adventure-tools/utils/files"
 
 	_ "github.com/alexflint/go-arg"
 )

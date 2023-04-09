@@ -3,6 +3,7 @@ package files
 import (
 	"bufio"
 	"bytes"
+	"fmt"
 	"image"
 	"image/png"
 	"io"
@@ -67,6 +68,14 @@ func SaveToDisk(path string, img image.Image) (err error) {
 	}
 
 	writer := bufio.NewWriter(file)
-	writer.Write(buf.Bytes())
+	n, err := writer.Write(buf.Bytes())
+	if err != nil {
+		return err
+	}
+	err = writer.Flush()
+	if err != nil {
+		return err
+	}
+	fmt.Printf("%d bytes written to %s\n", n, path)
 	return nil
 }
